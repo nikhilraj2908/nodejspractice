@@ -3,7 +3,7 @@ let express=require("express");
 let app=express();
 
 app.get("/",(req,res)=>{
-    res.status(200).json("message:'get request on default'");
+    res.status(200).json({"message":'get request on default'});
 })
 
 app.get("/demo",(req,res)=>{
